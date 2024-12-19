@@ -12,7 +12,7 @@ const NavBar = () => {
                         <Link to="/propList" className="btn btn-primary text-white me-2">
                             Propiedades
                         </Link>
-                        <Link to="/tasaciones" className="btn btn-primary text-white me-2">
+                        <Link to="/appraisalForm" className="btn btn-primary text-white me-2">
                             Tasaciones
                         </Link>
                         <Link to="/contact" className="btn btn-primary text-white pe-5">

@@ -1,0 +1,31 @@
+.appraisal-page .header {
+    text-align: center;
+    background-color: #004a56;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .appraisal-page .header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .appraisal-page .header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .appraisal-page .footer {
+    background-color: #004a56;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .appraisal-page .footer h6 {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .appraisal-page .footer p {
+    margin: 0;
+  }
