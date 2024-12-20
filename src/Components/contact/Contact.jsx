@@ -108,7 +108,7 @@ const ContactForm = () => {
       {/* Mapa */}
       <div className="map-container">
         <iframe
-          src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Moreno+1623+Rosario+Santa+Fe+Argentina"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB0s_yzzkRZVOUEWyL7y7lmd4qA7ygiIlc&q=Moreno+1623+Rosario+Santa+Fe+Argentina"
           width="100%"
           height="400"
           style={{ border: 0 }}
