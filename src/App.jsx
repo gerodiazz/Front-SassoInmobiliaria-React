@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Components/layOu/Layout'; 
-import Dashboard from './Components/dashboard/Dashboard';
 import Contact from './Components/contact/Contact';
 import AppraisalForm from './Components/appraisalForm/AppraisalForm';
 import Login from './Components/login/Login';
@@ -12,7 +11,6 @@ function App() {
       path: "/",
       element: <Layout />,
       children: [
-        { index: true, element: <Dashboard /> }, 
         { path: "contact", element: <Contact /> },
         { path: "appraisalForm", element: <AppraisalForm /> },
         { path: "propList", element: <PropList/> },
