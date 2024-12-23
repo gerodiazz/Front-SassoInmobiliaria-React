@@ -4,6 +4,8 @@ import Contact from './Components/contact/Contact';
 import AppraisalForm from './Components/appraisalForm/AppraisalForm';
 import Login from './Components/login/Login';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import PropList from './Components/propList/PropList';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -13,6 +15,7 @@ function App() {
       children: [
         { path: "contact", element: <Contact /> },
         { path: "appraisalForm", element: <AppraisalForm /> },
+        { path: "propList", element: <PropList/> },
         
       ],
     },
