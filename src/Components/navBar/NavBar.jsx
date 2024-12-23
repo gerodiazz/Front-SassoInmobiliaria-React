@@ -3,38 +3,59 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light custom-navbar">
-                <div 
-                    className="d-flex justify-content-between w-100" 
-                    style={{ backgroundColor: 'rgb(11, 47, 53)' }}
-                >
-                    <div className="d-flex" style={{ backgroundColor: 'rgb(11, 47, 53)', padding: '10px', borderRadius: '10px' // Opcional, redondea bordes
-    }}>
+            <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: 'rgb(11, 47, 53)' }}>
+                <div className="container-fluid">
+                    {/* Logo */}
+                    <Link to="/" className="navbar-brand d-flex align-items-center">
                         <img 
                             src="/LogoSassoNuevo.png" 
-                            width={130} 
+                            width={140} 
                             height={110} 
-                            className="bg-success" 
                             alt="Logo" 
                         />
-                    </div>
-                    <div 
-                        className="d-flex justify-content-end w-100 p-4 pe-5" 
-                        style={{ backgroundColor: 'rgb(11, 47, 53)' }} 
-                    >
-                        <Link to="/propList" className="btn btn-primary text-white me-2" style={{ backgroundColor: 'rgb(11, 47, 53)' }}>
-                            Propiedades
-                        </Link>
-                        <Link to="/appraisalForm" className="btn btn-primary text-white me-2" style={{ backgroundColor: 'rgb(11, 47, 53)' }}>
-                            Tasaciones
-                        </Link>
-                        <Link to="/contact" className="btn btn-primary text-white pe-5" style={{ backgroundColor: 'rgb(11, 47, 53)' }}>
-                            Contacto
-                        </Link>
+                    </Link>
+
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+
+                    {/* Links de navegación */}
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <div className="navbar-nav ms-auto">
+                            <Link 
+                                to="/propList" 
+                                className="nav-link text-white me-3"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                PROPIEDADES
+                            </Link>
+                            <Link 
+                                to="/appraisalForm" 
+                                className="nav-link text-white me-3"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                TASACIONES
+                            </Link>
+                            <Link 
+                                to="/contact" 
+                                className="nav-link text-white"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                CONTACTO
+                            </Link>
+                            <Link 
+                                to="/contact" 
+                                className="nav-link text-white fw-semibold"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                INICIAR SESIÓN
+                            </Link>
+                        </div>
                     </div>
                 </div>
-                <div className="py-1" />
-                <div className="py-3" style={{ backgroundColor: 'rgb(255, 193, 7)' }} />
+
+                {/* Línea amarilla debajo */}
+                <div style={{ backgroundColor: 'rgb(255, 193, 7)', height: '4px' }} />
             </nav>
         </>
     );

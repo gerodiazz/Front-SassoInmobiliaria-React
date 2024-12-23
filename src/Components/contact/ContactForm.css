@@ -31,30 +31,36 @@
   }
   
   .half-text {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    padding: 10px 20px;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-  }
-  
-  .half-text .top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 50%;
-    background-color: #004d40; /* Color superior */
-  }
-  
-  .half-text .bottom {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #00796b; /* Color inferior */
-  }
+  font-size: 20px; 
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1; 
+}
+
+.half-text .top,
+.half-text .bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: '';
+  z-index: -1; /* Envía los colores de fondo detrás del texto */
+}
+
+.half-text .top {
+  top: 0;
+  bottom: 50%;
+  background-color: rgba(0, 77, 64, 0.7); /* Color superior con opacidad */
+  position: absolute;
+  transform: translateX(-15px);
+}
+
+.half-text .bottom {
+  top: 50%;
+  bottom: 0;
+  left: 15px;
+  background-color: rgba(0, 121, 107, 0.7); /* Color inferior con opacidad */
+}

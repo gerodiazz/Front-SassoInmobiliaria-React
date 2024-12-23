@@ -3,6 +3,7 @@ import Layout from './Components/layOu/Layout';
 import Contact from './Components/contact/Contact';
 import AppraisalForm from './Components/appraisalForm/AppraisalForm';
 import Login from './Components/login/Login';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   const router = createBrowserRouter([
