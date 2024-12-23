@@ -18,3 +18,43 @@
   .contact-page .map-container {
     margin-top: 30px;
   }
+
+  .icon-custom {
+    color: #dfcb6d;
+    font-size: 1.5rem; 
+  }
+
+  .col-md-4{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .half-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .half-text .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    background-color: #004d40; /* Color superior */
+  }
+  
+  .half-text .bottom {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00796b; /* Color inferior */
+  }
