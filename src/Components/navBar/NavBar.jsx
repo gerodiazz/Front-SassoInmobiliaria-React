@@ -42,7 +42,7 @@ const NavBar = () => {
                 </div>
             </nav>
 
-            <div style={{ backgroundColor: '#dfcb6d', height: '10px' }}></div>
+            <div style={{ backgroundColor: '#dfcb6d', height: '15px' }}></div>
         </>
     );
 };
