@@ -28,9 +28,9 @@ const NavBar = () => {
                                 >
                                     PROPIEDADES
                                 </a>
-                                <ul className="dropdown-menu" aria-labelledby="propertiesDropdown">
-                                    <li><Link to="/propList" className="dropdown-item">Venta</Link></li>
-                                    <li><Link to="/propList" className="dropdown-item">Alquiler</Link></li>
+                                <ul style={{ backgroundColor: '#0a2931' }} className="dropdown-menu" aria-labelledby="propertiesDropdown">
+                                    <li ><Link to="/propList" className="dropdown-item" style={{ color: '#ffffff' }}>Venta</Link></li>
+                                    <li><Link to="/propList" className="dropdown-item" style={{ color: '#ffffff' }}>Alquiler</Link></li>
                                 </ul>
                             </div>
 
