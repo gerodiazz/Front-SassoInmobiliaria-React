@@ -13,81 +13,86 @@ const AppraisalForm = () => {
       </header>
 
       <div className="container my-5">
-        <div className="row justify-content-center">
-          <div className="col-md-8">
-            <form>
-              <div className="mb-3">
-                <label htmlFor="name" className="form-label">
-                  Nombre
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="form-control"
-                  placeholder="Nombre"
-                />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="email" className="form-label">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="form-control"
-                  placeholder="Email"
-                />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="phone" className="form-label">
-                  Teléfono
-                </label>
-                <input
-                  type="text"
-                  id="phone"
-                  className="form-control"
-                  placeholder="Teléfono"
-                />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="branch" className="form-label">
-                  Sucursal
-                </label>
-                <select id="branch" className="form-control">
-                  <option value="">Seleccione una sucursal</option>
-                  <option value="rosario">Rosario</option>
-                  <option value="santa-fe">Santa Fe</option>
-                </select>
-              </div>
-              <div className="mb-3">
-                <label htmlFor="property-address" className="form-label">
-                  Dirección de la propiedad
-                </label>
-                <input
-                  type="text"
-                  id="property-address"
-                  className="form-control"
-                  placeholder="Dirección de la propiedad"
-                />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="property-description" className="form-label">
-                  Descripción de la propiedad
-                </label>
-                <textarea
-                  id="property-description"
-                  className="form-control"
-                  rows="5"
-                  placeholder="Descripción de la propiedad"
-                ></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary w-100">
-                Enviar
-              </button>
-            </form>
-          </div>
+  <div className="row justify-content-center">
+    <div className="col-md-6">
+      <form className="card shadow p-4">
+        {/* Nombre */}
+        <div className="mb-4">
+          <label htmlFor="name" className="form-label">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            className="form-control form-control-lg shadow-sm"
+            placeholder="Nombre"
+          />
         </div>
-      </div>
+
+        {/* Email */}
+        <div className="mb-4">
+          <label htmlFor="email" className="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            className="form-control form-control-lg shadow-sm"
+            placeholder="Email"
+          />
+        </div>
+
+        {/* Teléfono */}
+        <div className="mb-4">
+          <label htmlFor="phone" className="form-label">Teléfono</label>
+          <input
+            type="text"
+            id="phone"
+            className="form-control form-control-lg shadow-sm"
+            placeholder="Teléfono"
+          />
+        </div>
+
+        {/* Sucursal */}
+        <div className="mb-4">
+          <label htmlFor="branch" className="form-label">Sucursal</label>
+          <select
+            id="branch"
+            className="form-control form-control-lg shadow-sm"
+          >
+            <option value="">Seleccione una sucursal</option>
+            <option value="rosario">Rosario</option>
+            <option value="santa-fe">Santa Fe</option>
+          </select>
+        </div>
+
+        {/* Dirección de la propiedad */}
+        <div className="mb-4">
+          <label htmlFor="property-address" className="form-label">Dirección de la propiedad</label>
+          <input
+            type="text"
+            id="property-address"
+            className="form-control form-control-lg shadow-sm"
+            placeholder="Dirección de la propiedad"
+          />
+        </div>
+
+        {/* Descripción de la propiedad */}
+        <div className="mb-4">
+          <label htmlFor="property-description" className="form-label">Descripción de la propiedad</label>
+          <textarea
+            id="property-description"
+            className="form-control form-control-lg shadow-sm"
+            rows="5"
+            placeholder="Descripción de la propiedad"
+          ></textarea>
+        </div>
+
+        {/* Botón Enviar */}
+        <button type="submit" className="btn btn-primary w-100 py-2 shadow-sm">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
 
       <footer className="footer">
         <div className="container">

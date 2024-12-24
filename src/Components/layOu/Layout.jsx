@@ -8,6 +8,9 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
+      <div >
+                <h1 className="d-flex justify-content-center p-5">Bienvenidos a Sasso Inmobiliaria</h1>
+            </div>
     </>
   );
 };
