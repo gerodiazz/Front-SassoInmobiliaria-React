@@ -15,17 +15,17 @@
     margin-top: 10px;
   }
   
-  .appraisal-page .footer {
+  .footer {
     background-color: #004a56;
     color: #fff;
     padding: 20px 0;
   }
   
-  .appraisal-page .footer h6 {
+  .footer h6 {
     font-size: 1.1rem;
     font-weight: bold;
   }
   
-  .appraisal-page .footer p {
+  .footer p {
     margin: 0;
   }
