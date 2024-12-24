@@ -20,7 +20,7 @@ const NavBar = () => {
                             <div className="nav-item dropdown">
                                 <a 
                                     href="#"
-                                    className="nav-link dropdown-toggle text-white me-3"
+                                    className="nav-link dropdown-toggle text-white me-3 custom-hover py-5"
                                     id="propertiesDropdown"
                                     role="button"
                                     data-bs-toggle="dropdown"
@@ -29,20 +29,29 @@ const NavBar = () => {
                                     PROPIEDADES
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="propertiesDropdown">
-                                    <li><Link to="/propList/venta" className="dropdown-item">Venta</Link></li>
-                                    <li><Link to="/propList/alquiler" className="dropdown-item">Alquiler</Link></li>
+                                    <li><Link to="/propList" className="dropdown-item">Venta</Link></li>
+                                    <li><Link to="/propList" className="dropdown-item">Alquiler</Link></li>
                                 </ul>
                             </div>
 
-                            <Link to="/appraisalForm" className="nav-link text-white me-3" style={{ textDecoration: 'none' }}>TASACIONES</Link>
-                            <Link to="/contact" className="nav-link text-white" style={{ textDecoration: 'none' }}>CONTACTO</Link>
-                            <Link to="/contact" className="nav-link text-white fw-semibold" style={{ textDecoration: 'none' }}>INICIAR SESIÓN</Link>
+                            <Link to="/appraisalForm" className="nav-link text-white me-3 custom-hover py-5" style={{ textDecoration: 'none' }}>TASACIONES</Link>
+                            <Link to="/contact" className="nav-link text-white custom-hover py-5" style={{ textDecoration: 'none' }}>CONTACTO</Link>
+                            <Link to="/contact" className="nav-link text-white fw-semibold custom-hover py-5" style={{ textDecoration: 'none' }}>INICIAR SESIÓN</Link>
                         </div>
                     </div>
                 </div>
             </nav>
 
             <div style={{ backgroundColor: '#dfcb6d', height: '10px' }}></div>
+            {/* CSS para el hover */}  
+            <style>
+                {`  
+                .custom-hover:hover {  
+                    background-color: rgba(255, 193, 7, 0.2); /* Color más claro para el hover */  
+                    border-radius: 5px; /* Opcional: bordes redondeados al hover */  
+                }  
+                `}
+            </style>
         </>
     );
 };
