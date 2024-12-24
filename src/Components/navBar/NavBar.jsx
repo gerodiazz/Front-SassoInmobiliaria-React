@@ -1,41 +1,48 @@
 import { Link } from "react-router-dom";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import "../navBar/NavBar.css"
 const NavBar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light custom-navbar">
-                <div 
-                    className="d-flex justify-content-between w-100" 
-                    style={{ backgroundColor: 'rgb(11, 47, 53)' }}
-                >
-                    <div className="d-flex" style={{ backgroundColor: 'rgb(11, 47, 53)', padding: '10px', borderRadius: '10px' // Opcional, redondea bordes
-    }}>
-                        <img 
-                            src="/LogoSassoNuevo.png" 
-                            width={130} 
-                            height={110} 
-                            className="bg-success" 
-                            alt="Logo" 
-                        />
-                    </div>
-                    <div 
-                        className="d-flex justify-content-end w-100 p-4 pe-5" 
-                        style={{ backgroundColor: 'rgb(11, 47, 53)' }} 
-                    >
-                        <Link to="/propList" className="btn btn-primary text-white me-2" style={{ backgroundColor: 'rgb(11, 47, 53)' }}>
-                            Propiedades
-                        </Link>
-                        <Link to="/appraisalForm" className="btn btn-primary text-white me-2" style={{ backgroundColor: 'rgb(11, 47, 53)' }}>
-                            Tasaciones
-                        </Link>
-                        <Link to="/contact" className="btn btn-primary text-white pe-5" style={{ backgroundColor: 'rgb(11, 47, 53)' }}>
-                            Contacto
-                        </Link>
+            <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#0a2931' }}>
+                <div className="container-fluid">
+                    <Link to="/" className="navbar-brand d-flex align-items-center" style={{ marginLeft: '6em' }}>
+                        <img src="/LogoSassoNuevo.png" width={145} height={110} alt="Logo" />
+                    </Link>
+
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <div className="navbar-nav ms-auto">
+                            <div className="nav-item dropdown">
+                                <a 
+                                    href="#"
+                                    className="nav-link dropdown-toggle text-white me-3 custom-hover py-5"
+                                    id="propertiesDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    PROPIEDADES
+                                </a>
+                                <ul style={{ backgroundColor: '#0a2931' }} className="dropdown-menu" aria-labelledby="propertiesDropdown">
+                                    <li ><Link to="/propList" className="dropdown-item" style={{ color: '#ffffff' }}>Venta</Link></li>
+                                    <li><Link to="/propList" className="dropdown-item" style={{ color: '#ffffff' }}>Alquiler</Link></li>
+                                </ul>
+                            </div>
+
+                            <Link to="/appraisalForm" className="nav-link text-white me-3 custom-hover py-5" style={{ textDecoration: 'none' }}>TASACIONES</Link>
+                            <Link to="/contact" className="nav-link text-white custom-hover py-5" style={{ textDecoration: 'none' }}>CONTACTO</Link>
+                            <Link to="/contact" className="nav-link text-white fw-semibold custom-hover py-5" style={{ textDecoration: 'none' }}>INICIAR SESIÓN</Link>
+                        </div>
                     </div>
                 </div>
-                <div className="py-1" />
-                <div className="py-3" style={{ backgroundColor: 'rgb(255, 193, 7)' }} />
             </nav>
+
+            <div style={{ backgroundColor: '#dfcb6d', height: '10px' }}></div>
         </>
     );
 };
