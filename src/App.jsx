@@ -1,9 +1,10 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Layout from './Components/layOu/Layout'; 
-import Contact from './Components/contact/Contact';
-import AppraisalForm from './Components/appraisalForm/AppraisalForm';
-import Login from './Components/login/Login';
-import PropList from './Components/propList/PropList';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./Components/layOu/Layout";
+import Contact from "./Components/contact/Contact";
+import AppraisalForm from "./Components/appraisalForm/AppraisalForm";
+import Login from "./Components/login/Login";
+import PropList from "./Components/propList/PropList";
+import PropDetails from "./Components/propDetails/PropDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,8 +14,13 @@ function App() {
       children: [
         { path: "contact", element: <Contact /> },
         { path: "appraisalForm", element: <AppraisalForm /> },
-        { path: "propList", element: <PropList/> },
-        
+        { path: "propList", element: <PropList /> },
+
+        {
+          path: "propDetails/:id",
+          element: <PropDetails />,
+        },
+        ,
       ],
     },
     { path: "/login", element: <Login /> },
